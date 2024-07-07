@@ -1,3 +1,4 @@
+<?php global$projectDiscussion; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,9 +19,8 @@
         }
 
         #discuss-project {
-            background: url("images/banner2.png");
             background-size: cover;
-            background-position: center;
+            background: url("images/banner2.png") center;
             height: 40vh;
         }
     </style>
@@ -39,30 +39,26 @@
             <p class="lead mb-4">Project Sathi a reliable companion by your side, someone who understands your vision, shares your goals, and supports you every step of the way.</p>
         </div>
     </div>
-    <form class="row g-3">
+    <form class="row g-3" id="project-discussion-form" action="/submit-project-discussion" method="post">
         <div class="col-md-6">
             <label for="fname" class="form-label">Full Name</label>
-            <input type="email" class="form-control" id="fname">
+            <input type="text" name="fname" class="form-control" id="fname">
         </div>
         <div class="col-md-6">
             <label for="email" class="form-label">Email</label>
-            <input type="password" class="form-control" id="email">
+            <input type="email" name="email" class="form-control" id="email">
         </div>
         <div class="col-md-6">
             <label for="address" class="form-label">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="Chabahil, Kathmandu">
+            <input type="text" name="text" class="form-control" id="address" placeholder="Chabahil, Kathmandu">
         </div>
         <div class="col-md-6">
             <label for="phone" class="form-label">Phone</label>
-            <input type="password" class="form-control" id="phone">
-        </div>
-        <div class="col-md-6">
-            <label for="project-title" class="form-label">Project Title</label>
-            <input type="text" class="form-control" id="project-title" placeholder="Apartment, studio, or floor">
+            <input type="text" name="phone" class="form-control" id="phone">
         </div>
         <div class="col-md-6">
             <label for="project-category" class="form-label">Project Category</label>
-            <select id="project-category" class="form-select">
+            <select id="project-category" name="category" class="form-select">
                 <option selected>Choose...</option>
                 <option>E-commerce</option>
                 <option>Portfolio</option>
@@ -71,22 +67,18 @@
         </div>
         <div class="col-12">
             <label for="project-description" class="form-label">Project Description</label>
-            <textarea class="form-control" id="project-description" placeholder="Please describe your project in detail" rows="3"></textarea>
+            <textarea class="form-control" id="project-description" name="project-description" placeholder="Please describe your project in detail" rows="3"></textarea>
         </div>
         <div class="col-md-12">
             <label for="additional-message" class="form-label">Message</label>
-            <textarea class="form-control" id="additional-message" placeholder="Please leave an additional message" rows="3"></textarea>
+            <textarea class="form-control" name="additional-message" id="additional-message" placeholder="Please leave an additional message" rows="3"></textarea>
         </div>
         <div class="col-md-4">
             <label for="project-package" class="form-label">Project Package</label>
-            <select id="project-package" class="form-select">
+            <select id="project-package" name="project-package" class="form-select">
                 <option selected>Choose...</option>
                 <option>Portfolio</option>
             </select>
-        </div>
-        <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
         </div>
         <div class="col-12">
             <div class="form-check">
@@ -97,7 +89,7 @@
             </div>
         </div>
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </form>
 </div>

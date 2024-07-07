@@ -18,9 +18,8 @@
         }
 
         #contact {
-            background: url("images/banner2.png");
             background-size: cover;
-            background-position: center;
+            background: url("images/banner2.png") center;
             height: 40vh;
         }
     </style>
