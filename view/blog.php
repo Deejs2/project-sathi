@@ -27,6 +27,7 @@
     </symbol>
 </svg>
 
+<?php include "common/landing-nav.php"?>
 
 <main class="container">
 
@@ -151,16 +152,11 @@
                 <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
             </article>
 
-            <nav class="blog-pagination" aria-label="Pagination">
-                <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-                <a class="btn btn-outline-secondary rounded-pill disabled" aria-disabled="true">Newer</a>
-            </nav>
-
         </div>
 
         <div class="col-md-4">
-            <div class="position-sticky" style="top: 2rem;">
-                <div class="p-4 mb-3 bg-body-tertiary rounded">
+            <div class="position-sticky" style="top: 5rem;">
+                <div class="p-4 m-3 bg-body-tertiary rounded">
                     <h4 class="fst-italic">About</h4>
                     <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
                 </div>
@@ -231,7 +227,6 @@
 </main>
 
 <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
     <p class="mb-0">
         <a href="#">Back to top</a>
     </p>
