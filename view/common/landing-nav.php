@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top base-primary">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top base-primary" id="nav">
     <div class="container">
         <a class="navbar-brand" href="?page=landing">
             <img src="images/project-sathi-logo-sm.png" height="50px" alt="">
@@ -13,25 +13,25 @@
                     <a class="nav-link active" aria-current="page" href="?page=landing">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=about">About</a>
+                    <a class="nav-link active" href="?page=about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=landing#service">Service</a>
+                    <a class="nav-link active" href="?page=landing#service">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=landing#feature">Feature</a>
+                    <a class="nav-link active" href="?page=landing#feature">Feature</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=landing#project">Project</a>
+                    <a class="nav-link active" href="?page=landing#project">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=contact">Contact</a>
+                    <a class="nav-link active" href="?page=contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=landing#team">Team</a>
+                    <a class="nav-link active" href="?page=landing#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?page=blog">Blog</a>
+                    <a class="nav-link active" href="?page=blog">Blog</a>
                 </li>
             </ul>
             <div class="d-flex ms-3">

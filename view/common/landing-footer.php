@@ -21,15 +21,14 @@
             </div>
 
             <div class="col-4">
-                <form>
-                    <h5>Subscribe to our newsletter</h5>
-                    <p>Monthly digest of what's new and exciting from us.</p>
-                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn btn-light" type="button">Subscribe</button>
-                    </div>
-                </form>
+                <h5>Follow us</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <ul class="d-flex nav flex-column flex-sm-row w-100 gap-2">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fs-2 pe-2 fa-brands fa-facebook"></i></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fs-2 pe-2 fa-brands fa-instagram"></i></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fs-2 pe-2 fa-brands fa-twitter"></i></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white"><i class="fs-2 pe-2 fa-brands fa-youtube"></i></a></li>
+                </ul>
             </div>
         </div>
 
