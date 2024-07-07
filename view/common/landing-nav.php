@@ -10,32 +10,32 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="?page=landing">Home</a>
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=about">About</a>
+                    <a class="nav-link active" href="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=landing#service">Service</a>
+                    <a class="nav-link active" href="/#service">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=landing#feature">Feature</a>
+                    <a class="nav-link active" href="/#feature">Feature</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=landing#project">Project</a>
+                    <a class="nav-link active" href="/#project">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=contact">Contact</a>
+                    <a class="nav-link active" href="/contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=landing#pricing">Pricing</a>
+                    <a class="nav-link active" href="#pricing">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="?page=blog">Blog</a>
+                    <a class="nav-link active" href="/blog">Blog</a>
                 </li>
             </ul>
             <div class="d-flex ms-3">
-                <a href="?page=discuss-project" class="btn btn-outline-light">Discuss on Project</a>
+                <a href="/discuss-project" class="btn btn-outline-light">Discuss on Project</a>
             </div>
         </div>
     </div>

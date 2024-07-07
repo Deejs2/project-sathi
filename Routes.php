@@ -28,6 +28,10 @@ $router->get('/discuss-project', function() {
     include_once __DIR__ . '/view/project-discussion-form.php';
 });
 
+$router->get('/blog', function() {
+    include_once __DIR__ . '/view/blog.php';
+});
+
 $router->get('/contact', function() {
     include_once __DIR__ . '/view/contact.php';
 });
