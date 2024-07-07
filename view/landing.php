@@ -566,103 +566,67 @@
     </div>
 </div>
 
-<div class="container my-5">
-    <div class="p-3 pb-md-4 mx-auto text-center">
-        <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
-        <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
-    </div>
+<div id="pricing">
+    <div class="container my-5 py-5">
+        <div class="p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
+            <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
+        </div>
 
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Free</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>10 users included</li>
-                        <li>2 GB of storage</li>
-                        <li>Email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pro</h4>
-                </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>20 users included</li>
-                        <li>10 GB of storage</li>
-                        <li>Priority email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-bg-primary border-primary">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
-                        <li>30 users included</li>
-                        <li>15 GB of storage</li>
-                        <li>Phone and email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card-header py-3 text-bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-<div class="container my-5 py-4" id="team">
-    <h3 class="display-6 my-3">Our Team</h3>
-    <div class="row text-center py-4">
-        <div class="col border m-2 p-3 rounded">
-            <img src="images/dhiraj.png" class="bd-placeholder-img rounded-circle" width="140" height="140">
-            <div class="card-body">
-                <h5 class="card-title mt-3">Dhiraj Jirel</h5>
-                <h6 class="card-subtitle text-body-secondary my-3">Bootstrap, PHP, MySQL, SpringBoot, Java</h6>
-                <span><i class="fa-solid fa-envelope"></i> <small>jireldhiraj123@gmail.com</small></span>
-            </div>
-        </div><!-- /.col -->
-        <div class="col border m-2 p-3 rounded">
-            <img src="images/pasang.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140">
-            <div class="card-body">
-                <h5 class="card-title mt-3">Pasang Gelbu Sherpa</h5>
-                <h6 class="card-subtitle text-body-secondary my-3">Bootstrap, PHP, MySQL, SpringBoot, Java</h6>
-                <span><i class="fa-solid fa-envelope"></i> <small>pasanggelbu23@gmail.com</small></span>
-            </div>
-        </div><!-- /.col -->
-        <div class="col border m-2 p-3 rounded">
-            <img src="images/utsab.JPG" class="bd-placeholder-img rounded-circle" width="140" height="140">
-            <div class="card-body">
-                <h5 class="card-title mt-3">Utsab Dahal</h5>
-                <h6 class="card-subtitle text-body-secondary my-3">Bootstrap, PHP, MySQL, SpringBoot, Java</h6>
-                <span><i class="fa-solid fa-envelope"></i> <small>utsab2120@gmail.com</small></span>
-            </div>
-        </div><!-- /.col -->
-        <div class="col border m-2 p-3 rounded">
-            <img src="images/chitra.png" class="bd-placeholder-img rounded-circle" width="140" height="140">
-            <div class="card-body">
-                <h5 class="card-title mt-3">Chitra Prasad Arachrya</h5>
-                <h6 class="card-subtitle text-body-secondary my-3">Bootstrap, PHP, MySQL, Angular, Java</h6>
-                <span><i class="fa-solid fa-envelope"></i> <small>abisal8374@gmail.com</small></span>
-            </div>
-        </div><!-- /.col -->
-    </div><!-- /.row -->
 </div>
 
 <div class="container my-5 p-3" id="blog">
@@ -698,7 +662,7 @@
                         <h3 class="mb-0">How to setup Angular for beginner | step by step guide</h3>
                         <div class="mb-1 text-body-secondary">June 20, 2024</div>
                         <p class="mb-auto">
-                            Setting up Angular for the first time can be quite straightforward if you follow the steps carefully. Angular is a platform and framework for building single-page client applications using HTML, CSS, and JavaScript/TypeScript.</p>
+                            Setting up Angular for the first time can be quite straightforward if you follow the steps carefully. Angular is a platform and framework for building single-page client applications using HTML...</p>
                         <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi">

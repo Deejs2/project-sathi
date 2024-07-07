@@ -41,12 +41,6 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link d-flex align-items-center gap-2" href="?page=team">
-                <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
-                Team
-            </a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link d-flex align-items-center gap-2" href="?page=project">
                 <svg class="bi"><use xlink:href="#file-earmark-text"/></svg>
                 Projects
