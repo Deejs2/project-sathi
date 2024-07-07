@@ -175,6 +175,17 @@
 
 <div class="container py-5" id="about">
 
+    <?php if (isset($_SESSION['message'])): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success!</strong> <?php echo var_dump($_SESSION['message']); ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php else: ?>
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Error!</strong> <?php echo $_SESSION['error']; ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    <?php endif; ?>
     <div class="pb-4 py-5 my-5 text-center">
         <h1 class="display-5 text-body-emphasis">Welcome To Project Sathi</h1>
         <div class="col-lg-6 mx-auto">

@@ -1,23 +1,13 @@
 <?php
 
-switch ($_GET['page']) {
-    case '':
-    case 'landing':
-        include "view/landing.php";
-        break;
-    case 'about':
-        include "view/about.php";
-        break;
-    case 'contact':
-        include "view/contact.php";
-        break;
-    case 'blog':
-        include "view/blog.php";
-        break;
-    case 'discuss-project':
-        include "view/project-discussion-form.php";
-        break;
-    default:
-        include "view/404.php";
-        break;
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
 }
+
+$router =  __DIR__ . '/Router.php';
+require_once $router;
+
+$router = new Router();
+
+//include routes file
+require_once __DIR__ . '/Routes.php';
