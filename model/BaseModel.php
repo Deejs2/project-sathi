@@ -2,6 +2,8 @@
 
 namespace model;
 
+require_once __DIR__ . '/../config/Database.php';
+
 use config\Database;
 
 abstract class BaseModel
@@ -15,14 +17,20 @@ abstract class BaseModel
         $this->tableName = $this->getTableName();
     }
 
-    abstract protected function getTableName();
+    abstract protected function getTableName(): string;
 
     public function save(array $data)
     {
-        $columns = implode(', ', array_keys($data));
+        $columns = implode(', ', array_map(function($column) { return "`$column`"; }, array_keys($data)));
         $values = implode(', ', array_map(function($value) { return "'$value'"; }, array_values($data)));
-        $sql = "INSERT INTO {$this->getTableName()} ($columns) VALUES ($values)";
-        return $this->database->query($sql);
+        $sql = "INSERT INTO `{$this->getTableName()}` ($columns) VALUES ($values)";
+        $result = $this->database->query($sql);
+        if ($result) {
+            $data['id'] = $this->database->getConnection()->insert_id;
+            return $data;
+        } else {
+            return false;
+        }
     }
 
     public function update(array $data, $condition)
@@ -50,5 +58,25 @@ abstract class BaseModel
         $sql = "SELECT * FROM {$this->getTableName()} WHERE id = '$id'";
         $result = $this->database->query($sql);
         return $this->database->fetch($result);
+    }
+
+    public function getByCondition($condition)
+    {
+        $sql = "SELECT * FROM {$this->getTableName()} WHERE $condition";
+        $result = $this->database->query($sql);
+        return $this->database->fetchAll($result);
+    }
+
+    public function getOneByCondition($condition)
+    {
+        $sql = "SELECT * FROM {$this->getTableName()} WHERE $condition";
+        $result = $this->database->query($sql);
+        return $this->database->fetch($result);
+    }
+
+    public function createTable($columns)
+    {
+        $sql = "CREATE TABLE IF NOT EXISTS {$this->getTableName()} ($columns)";
+        return $this->database->query($sql);
     }
 }

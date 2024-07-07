@@ -4,7 +4,10 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 
-require_once __DIR__ . '/Router.php';
+$router =  __DIR__ . '/Router.php';
+require_once $router;
 
 $router = new Router();
-$router->route();
+
+//include routes file
+require_once __DIR__ . '/Routes.php';

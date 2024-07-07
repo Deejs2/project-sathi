@@ -1,4 +1,3 @@
-<?php global$projectDiscussion; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,9 +28,6 @@
 <body>
 
 <?php include 'common/landing-nav.php'; ?>
-
-<div id="discuss-project"></div>
-
 <div class="container col-xxl-12 px-4 py-5">
     <div class="px-4 py-5 my-5 text-center">
         <img class="d-block mx-auto mb-4" src="images/project-sathi-logo-sm.png" alt="" width="120" height="57">
@@ -43,18 +39,22 @@
         <div class="col-md-6">
             <label for="fname" class="form-label">Full Name</label>
             <input type="text" name="fname" class="form-control" id="fname">
+            <div id="fnameError" class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <label for="email" class="form-label">Email</label>
             <input type="email" name="email" class="form-control" id="email">
+            <div id="emailError" class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <label for="address" class="form-label">Address</label>
-            <input type="text" name="text" class="form-control" id="address" placeholder="Chabahil, Kathmandu">
+            <input type="text" name="address" class="form-control" id="address" placeholder="Chabahil, Kathmandu">
+            <div id="addressError" class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <label for="phone" class="form-label">Phone</label>
             <input type="text" name="phone" class="form-control" id="phone">
+            <div id="phoneError" class="invalid-feedback"></div>
         </div>
         <div class="col-md-6">
             <label for="project-category" class="form-label">Project Category</label>
@@ -64,10 +64,12 @@
                 <option>Portfolio</option>
                 <option>Business</option>
             </select>
+            <div id="categoryError" class="invalid-feedback"></div>
         </div>
         <div class="col-12">
             <label for="project-description" class="form-label">Project Description</label>
             <textarea class="form-control" id="project-description" name="project-description" placeholder="Please describe your project in detail" rows="3"></textarea>
+            <div id="projectDescriptionError" class="invalid-feedback"></div>
         </div>
         <div class="col-md-12">
             <label for="additional-message" class="form-label">Message</label>
@@ -79,6 +81,7 @@
                 <option selected>Choose...</option>
                 <option>Portfolio</option>
             </select>
+            <div id="packageError" class="invalid-feedback"></div>
         </div>
         <div class="col-12">
             <div class="form-check">
@@ -96,5 +99,45 @@
 
 <?php include 'common/landing-footer.php'; ?>
 
+<script>
+    document.getElementById('project-discussion-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+
+        fetch('/submit-project-discussion', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'error') {
+                    // Clear previous validation states
+                    document.querySelectorAll('.form-control').forEach(input => {
+                        input.classList.remove('is-invalid');
+                    });
+
+                    // Apply validation state and display error messages
+                    Object.keys(data.errors).forEach(field => {
+                        // Convert field name from hyphenated to camelCase for matching error element ID
+                        const camelCaseField = field.replace(/-([a-z])/g, function (g) { return g[1].toUpperCase(); });
+                        const errorElementId = camelCaseField + 'Error';
+                        const inputElement = document.getElementsByName(field)[0];
+                        const errorElement = document.getElementById(errorElementId);
+                        if (inputElement && errorElement) {
+                            inputElement.classList.add('is-invalid');
+                            errorElement.textContent = data.errors[field];
+                        }
+                    });
+                } else {
+                    alert(data.message);
+                    this.reset(); // Clear the form
+                    document.querySelectorAll('.form-control').forEach(input => {
+                        input.classList.remove('is-invalid'); // Clear validation states
+                    });
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>
 </body>
 </html>
