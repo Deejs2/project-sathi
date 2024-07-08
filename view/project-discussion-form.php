@@ -81,7 +81,7 @@
                 <option selected>Choose...</option>
                 <option>Portfolio</option>
             </select>
-            <div id="packageError" class="invalid-feedback"></div>
+            <div id="projectPackageError" class="invalid-feedback"></div>
         </div>
         <div class="col-12">
             <div class="form-check">
@@ -101,9 +101,35 @@
 
 <script>
     document.getElementById('project-discussion-form').addEventListener('submit', function(event) {
+        // Check and adjust dropdown values if default option is selected
+        const categoryDropdown = document.getElementById('project-category');
+        const packageDropdown = document.getElementById('project-package');
+
+        // Function to remove error class on valid selection
+        function clearDropdownError(dropdown) {
+            if (dropdown.value !== 'Choose...') {
+                dropdown.classList.remove('is-invalid');
+            }
+        }
+        categoryDropdown.addEventListener('change', function() {
+            clearDropdownError(categoryDropdown);
+        });
+
+        packageDropdown.addEventListener('change', function() {
+            clearDropdownError(packageDropdown);
+        });
+
         event.preventDefault();
         const formData = new FormData(this);
 
+        if (categoryDropdown.value === 'Choose...') {
+            formData.set('category', ''); // Set to empty string if default is selected
+            categoryDropdown.classList.add('is-invalid');
+        }
+        if (packageDropdown.value === 'Choose...') {
+            formData.set('project-package', ''); // Set to empty string if default is selected
+            packageDropdown.classList.add('is-invalid');
+        }
         fetch('/submit-project-discussion', {
             method: 'POST',
             body: formData
