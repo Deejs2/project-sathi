@@ -1,3 +1,6 @@
+<?php
+echo "admin page";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -129,7 +132,7 @@
                 case 'project-discussion':
                     include "../view/admin/project-discussion.php";
                     break;
-                case 'admin':
+                case 'admin_layout':
                     include "../view/admin/admin.php";
                     break;
                 case 'blog':
