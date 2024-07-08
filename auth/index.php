@@ -1,6 +1,6 @@
 <?php
-
-switch (isset($_GET['page'])) {
+$page = $_GET['page'] ?? '';
+switch ($page) {
     case '':
     case 'login':
         include "../view/auth/login.php";

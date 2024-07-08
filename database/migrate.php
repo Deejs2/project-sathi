@@ -28,6 +28,9 @@ function runMigration($fileName) {
 $migrationFiles = [
     '2023_07_07_000001_create_users_table.php',
     '2023_07_07_000002_create_contact_us_table.php',
+    '2023_07_08_000001_create_packages_table.php',
+    '2023_07_08_000002_create_features_table.php',
+    '2023_07_08_000003_create_price_ranges_table.php'
 ];
 
 // Execute each migration
@@ -37,7 +40,8 @@ foreach ($migrationFiles as $file) {
 
 $seeders = [
   'UserSeeder',
-  'ContactSeeder'
+  'PackageSeeder',
+  'FeatureSeeder',
 ];
 
 foreach ($seeders as $seeder) {
