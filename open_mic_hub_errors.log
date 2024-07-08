@@ -1,0 +1,6 @@
+[08-Jul-2024 04:16:32 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in C:\xampp\htdocs\project-sathi\config\SessionConfig.php on line 16
+[08-Jul-2024 04:16:42 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in C:\xampp\htdocs\project-sathi\config\SessionConfig.php on line 16
+[08-Jul-2024 04:16:43 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in C:\xampp\htdocs\project-sathi\config\SessionConfig.php on line 16
+[08-Jul-2024 04:16:46 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in C:\xampp\htdocs\project-sathi\config\SessionConfig.php on line 16
+[08-Jul-2024 04:16:52 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in C:\xampp\htdocs\project-sathi\config\SessionConfig.php on line 16
+[08-Jul-2024 04:20:10 UTC] PHP Warning:  session_name(): Session name cannot be changed when a session is active in C:\xampp\htdocs\project-sathi\config\SessionConfig.php on line 16
