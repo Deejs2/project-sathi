@@ -15,16 +15,6 @@ class ContactUs
         $this->response = new Response();
     }
 
-//    public function submitContactUs()
-//    {
-//        $data = $_POST;
-//        $response = $this->contactUs->submitContactUs($data);
-//        if ($response) {
-//            $this->response->success($response, 'Contact Us submitted successfully');
-//        } else {
-//            $this->response->error('Failed to submit Contact Us');
-//        }
-//    }
 
     public function submitContactUs()
     {

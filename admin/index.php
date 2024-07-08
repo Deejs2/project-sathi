@@ -1,6 +1,15 @@
+
 <?php
-echo "admin page";
+
+require_once __DIR__ . '/../config/SessionConfig.php';
+
+if (get_session('isAuthenticated') !== true) {
+    header('Location: /auth');
+    exit();
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -121,7 +130,7 @@ echo "admin page";
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <?php
-            switch ($_GET['page']) {
+            switch (isset($_GET['page'])) {
                 case '':
                 case 'dashboard':
                     include "../view/admin/dashboard.php";
@@ -132,7 +141,7 @@ echo "admin page";
                 case 'project-discussion':
                     include "../view/admin/project-discussion.php";
                     break;
-                case 'admin_layout':
+                case 'admin':
                     include "../view/admin/admin.php";
                     break;
                 case 'blog':
