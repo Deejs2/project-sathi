@@ -1,0 +1,8 @@
+# Redirect all requests to the public folder
+RewriteEngine On
+
+# Redirect everything to the public folder
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Use a PHP file as the index file
+DirectoryIndex index.php

@@ -1,0 +1,257 @@
+[11-Jul-2024 01:37:07 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:09 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:13 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:17 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:37:21 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:24 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:24 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:30 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:55 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:56 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:37:59 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:38:02 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:38:32 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:38:35 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:38:35 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:38:49 UTC] Requested path: /admin with method: GET. Callback: NULL
+[11-Jul-2024 01:40:52 UTC] Requested path: /admin with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:41:23 UTC] Requested path: /admin with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:41:24 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:43:48 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:43:51 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:43:53 UTC] Requested path: /contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'contact',
+)
+[11-Jul-2024 01:43:57 UTC] Requested path: /api/submit-contact-us with method: POST. Callback: NULL
+[11-Jul-2024 01:44:47 UTC] Requested path: /contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'contact',
+)
+[11-Jul-2024 01:44:49 UTC] Requested path: /api/contact-us/submit-contact-us with method: POST. Callback: NULL
+[11-Jul-2024 01:45:23 UTC] Requested path: /contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'contact',
+)
+[11-Jul-2024 01:45:24 UTC] Requested path: /api/contact-us/submit-contact-us with method: POST. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'submitContactUs',
+)
+[11-Jul-2024 01:45:39 UTC] Requested path: /api/contact-us/submit-contact-us with method: POST. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'submitContactUs',
+)
+[11-Jul-2024 01:47:02 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:47:03 UTC] Requested path: /about with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'about',
+)
+[11-Jul-2024 01:47:03 UTC] PHP Warning:  include_once(C:\xampp\htdocs\img\ProjectPartner\app\views\layout/../about.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\img\ProjectPartner\app\views\layout\main.php on line 17
+[11-Jul-2024 01:47:03 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\img\ProjectPartner\app\views\layout/../about.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\img\ProjectPartner\app\views\layout\main.php on line 17
+[11-Jul-2024 01:47:06 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:47:10 UTC] Requested path: /about with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'about',
+)
+[11-Jul-2024 01:47:10 UTC] PHP Warning:  include_once(C:\xampp\htdocs\img\ProjectPartner\app\views\layout/../about.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\img\ProjectPartner\app\views\layout\main.php on line 17
+[11-Jul-2024 01:47:10 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\img\ProjectPartner\app\views\layout/../about.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\img\ProjectPartner\app\views\layout\main.php on line 17
+[11-Jul-2024 01:47:12 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:47:15 UTC] Requested path: /contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'contact',
+)
+[11-Jul-2024 01:47:19 UTC] Requested path: /blog with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'blog',
+)
+[11-Jul-2024 01:47:40 UTC] Requested path: /blog with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'blog',
+)
+[11-Jul-2024 01:47:42 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:47:46 UTC] Requested path: /about with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'about',
+)
+[11-Jul-2024 01:47:46 UTC] PHP Warning:  include_once(C:\xampp\htdocs\img\ProjectPartner\app\views\layout/../about.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\img\ProjectPartner\app\views\layout\main.php on line 17
+[11-Jul-2024 01:47:46 UTC] PHP Warning:  include_once(): Failed opening 'C:\xampp\htdocs\img\ProjectPartner\app\views\layout/../about.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\img\ProjectPartner\app\views\layout\main.php on line 17
+[11-Jul-2024 01:47:48 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:48:32 UTC] Requested path: /api/contact-us/submit-contact-us with method: POST. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'submitContactUs',
+)
+[11-Jul-2024 01:48:49 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[11-Jul-2024 01:51:30 UTC] Requested path: /admin with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 01:51:33 UTC] Requested path: /admin/contact with method: GET. Callback: NULL
+[11-Jul-2024 01:52:23 UTC] Requested path: /admin/contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardContactUs',
+)
+[11-Jul-2024 01:52:23 UTC] Requested path: /api/contact-us/get-contact-us with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'getAllContactUs',
+)
+[11-Jul-2024 04:58:12 UTC] Requested path: /admin/contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardContactUs',
+)
+[11-Jul-2024 04:58:13 UTC] Requested path: /api/contact-us/get-contact-us with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'getAllContactUs',
+)
+[11-Jul-2024 04:58:18 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 04:58:20 UTC] Requested path: /admin/project-discussion with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardProjectDiscussions',
+)
+[11-Jul-2024 04:58:20 UTC] Method dashboardProjectDiscussions not found in app\Controllers\Web\PageController
+[11-Jul-2024 05:00:59 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 05:01:02 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[11-Jul-2024 05:01:04 UTC] Requested path: /admin/project-discussion with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardProjectDiscussions',
+)
+[11-Jul-2024 05:01:04 UTC] Method dashboardProjectDiscussions not found in app\Controllers\Web\PageController
+[11-Jul-2024 05:01:08 UTC] Requested path: /admin/project-discussion with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardProjectDiscussions',
+)
+[11-Jul-2024 05:01:08 UTC] Method dashboardProjectDiscussions not found in app\Controllers\Web\PageController
+[11-Jul-2024 05:01:15 UTC] Requested path: /cc with method: GET. Callback: NULL
+[15-Jul-2024 08:53:22 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[15-Jul-2024 08:53:25 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 08:53:31 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 08:54:09 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 08:54:12 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 08:56:51 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 08:56:56 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 08:58:59 UTC] Requested path: / with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'landing',
+)
+[15-Jul-2024 08:59:08 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 08:59:27 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 08:59:58 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 09:01:16 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 09:01:18 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 09:01:24 UTC] Requested path: /contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'contact',
+)
+[15-Jul-2024 09:01:28 UTC] Requested path: /api/contact-us/submit-contact-us with method: POST. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'submitContactUs',
+)
+[15-Jul-2024 09:03:05 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 09:03:09 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 09:03:14 UTC] Requested path: /contact with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'contact',
+)
+[15-Jul-2024 09:03:16 UTC] Requested path: /api/contact-us/submit-contact-us with method: POST. Callback: array (
+  0 => 'app\\Controllers\\Api\\ContactUsController',
+  1 => 'submitContactUs',
+)
+[15-Jul-2024 09:07:34 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 09:07:37 UTC] Requested path: /api/submit-project-discussion with method: POST. Callback: NULL
+[15-Jul-2024 09:08:21 UTC] Requested path: /discuss-project with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'projectDiscussionForm',
+)
+[15-Jul-2024 09:08:24 UTC] Requested path: /api/project-discussion/submit-project-discussion with method: POST. Callback: array (
+  0 => 'app\\Controllers\\Api\\ProjectDiscussionController',
+  1 => 'submitProjectDiscussions',
+)
+[15-Jul-2024 09:20:26 UTC] Requested path: /admin with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[15-Jul-2024 09:20:28 UTC] Requested path: /admin/dashboard with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardHome',
+)
+[15-Jul-2024 09:20:29 UTC] Requested path: /admin/project-discussion with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardProjectDiscussions',
+)
+[15-Jul-2024 09:20:29 UTC] Method dashboardProjectDiscussions not found in app\Controllers\Web\PageController
+[15-Jul-2024 09:20:35 UTC] Requested path: /admin/project-discussion with method: GET. Callback: array (
+  0 => 'app\\Controllers\\Web\\PageController',
+  1 => 'dashboardProjectDiscussions',
+)
+[15-Jul-2024 09:20:35 UTC] Method dashboardProjectDiscussions not found in app\Controllers\Web\PageController
